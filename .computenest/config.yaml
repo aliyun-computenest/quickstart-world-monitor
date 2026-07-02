@@ -1,0 +1,75 @@
+Service:
+  RegionId: cn-hangzhou
+  DeployType: ros
+  DeployMetadata:
+    ServiceInstanceNameRule:
+      Prefix: worldmonitor
+      UseDefaultValue: false
+    NetworkMetadata:
+      EnablePrivateVpcConnection: false
+      EnableReversePrivateVpcConnection: false
+    SupplierDeployMetadata:
+      ArtifactRelation:
+        ecs_image:
+          ArtifactId: artifact-d5093f62293941d592e7
+          ArtifactVersion: "2"
+    TemplateConfigs:
+    - Name: ECS单机版
+      Url: 'ros_templates/template.yaml'
+      AllowedRegions:
+      - cn-qingdao
+      - cn-beijing
+      - cn-zhangjiakou
+      - cn-huhehaote
+      - cn-hangzhou
+      - cn-shanghai
+      - cn-shenzhen
+      - cn-chengdu
+      - cn-hongkong
+      - ap-southeast-1
+      - ap-southeast-3
+      - ap-southeast-5
+      - ap-northeast-1
+      - us-west-1
+      - us-east-1
+      - eu-central-1
+      - eu-west-1
+      - me-east-1
+      OutputConfigs:
+      - OutputKey: worldmonitor_3000_url
+        EnableWebProxy: true
+  ServiceType: private
+  ServiceInfo:
+  - Locale: zh-CN
+    Name: Worldmonitor社区版
+    ShortDescription: World Monitor 是一款实时全球情报仪表板，聚合新闻、地缘政治、基础设施与金融市场数据，提供 3D 
+      地球可视化与多主题界面，支持自托管 Docker Compose 一键部署。
+    Image: 
+      https://service-info-public.oss-cn-hangzhou.aliyuncs.com/1853370294850618/cn-hangzhou/service_logo3f52f7bdc85e4919a421.png
+Artifact:
+  EcsImage:
+    ArtifactType: EcsImage
+    ArtifactId: artifact-d5093f62293941d592e7
+    ArtifactName: ecs_image_worldmonitor
+    Description: worldmonitor EcsImage
+    SupportRegionIds:
+    - cn-qingdao
+    - cn-beijing
+    - cn-zhangjiakou
+    - cn-huhehaote
+    - cn-hangzhou
+    - cn-shanghai
+    - cn-shenzhen
+    - cn-chengdu
+    - cn-hongkong
+    - ap-southeast-1
+    - ap-southeast-3
+    - ap-southeast-5
+    - ap-northeast-1
+    - us-west-1
+    - us-east-1
+    - eu-central-1
+    - eu-west-1
+    - me-east-1
+    ArtifactProperty:
+      RegionId: cn-hongkong
