@@ -29,3 +29,6 @@ World Monitor 是一款实时全球情报仪表板，聚合新闻、地缘政治
 ## 官方文档
 
 更多信息请访问官方文档：[World Monitor GitHub 仓库](https://github.com/koala73/worldmonitor)
+
+### 使用须知
+本工具为第三方开源项目，阿里云仅提供云资源和部署入口支持，不对工具自身功能、生成内容、执行结果、服务可用性及额外费用承担责任。
